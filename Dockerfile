@@ -10,7 +10,7 @@ RUN git clone https://github.com/LeeDongJin93/restful-api-python-flask.git /depl
 COPY . /deployment/
 RUN virtualenv /deployment/env/
 RUN /deployment/env/bin/pip install flask
-ENV PORT 8080
-EXPOSE 8080
+ENV PORT 80
+EXPOSE 80
 WORKDIR /deployment
 CMD env/bin/python app.py
